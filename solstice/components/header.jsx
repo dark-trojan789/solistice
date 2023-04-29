@@ -4,7 +4,7 @@ export default function Header(){
     return(
         <div>
             <nav>
-                best policy 
+                Best policy 
             </nav>
         </div>
     )
