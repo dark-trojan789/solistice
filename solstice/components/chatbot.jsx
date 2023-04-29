@@ -17,7 +17,23 @@ const steps = [
         trigger:'3',
     },{
         id:'3',
-        message:' hi {previousValue}, I will help you know more about the policy your looking at!'
+        message:' hi {previousValue}, I will help you know more about the policy your looking at!',
+        trigger:'4',
+    },{
+        id:'4',
+        message:'Are you looking for a new policy or want to know wheter your conndition is covered in your current policy',
+        trigger:'5'
+    },
+    {
+        id:'5',
+        options:[
+            { value: 1, label: 'New policy',trigger:'6'},
+            { value: 2, label: 'Know more about my current policy', trigger:'7' },
+        ]
+    },
+    {
+        id:'6',
+        message:'great what is the budget your looking for'
     }
 ];
 const theme = {
